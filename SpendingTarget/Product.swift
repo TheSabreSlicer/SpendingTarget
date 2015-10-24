@@ -19,6 +19,8 @@ class Product {
     var currentPrice : Double = 0
     var originalPrice : Double = 0
     var listPrice : Double = 0
+    var tcin : Int = 0
+    var url : String
     
     func setPrice(currentPrice : Double) {
         self.currentPrice = currentPrice
@@ -37,10 +39,10 @@ class Product {
     
     // You will likely need  some sort of initializer for the image as well
     
-    init( name : String) {
+    init(name : String, tcn : Int) {
         self.name = name
-        
-        
+        self.tcin = tcn
+        self.url = "https://api.target.com/items/v3/"+String(self.tcin)+"?id_type=tcin&fields=pricing,images&key=1Kfdqvy6wHmvJ4LDyAVOl7saCBoKHcSb"
 //        self.iurl = NSURL(string: forURL)!
 //        if let data = NSData(contentsOfURL: iurl) {
 //            imageURL.image = UIImage(data: data)
