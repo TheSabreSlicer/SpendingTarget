@@ -7,14 +7,13 @@
 //
 import UIKit
 import SwiftyJSON
+import Alamofire
 
 class Product {
     
-    var name : String?
+    var name : String = ""
     
-    //    image stuff should be done later - when the interface has been built
-    
-    //    var iurl : NSURL
+    var img_url : String = ""
     
     var currentPrice : Double = 0
     var originalPrice : Double = 0
@@ -38,23 +37,31 @@ class Product {
         self.listPrice = listPrice
     }
     
-    // You will likely need  some sort of initializer for the image as well
-    
     init(tcn : Int) {
         self.tcin = tcn
         self.url = "https://api.target.com/items/v3/"+String(self.tcin)+"?id_type=tcin&fields=pricing,images&key=1Kfdqvy6wHmvJ4LDyAVOl7saCBoKHcSb"
-        jsonFuncs().getJSON(url, completionHandler:handleResponse)
-        //        self.iurl = NSURL(string: forURL)!
-        //        if let data = NSData(contentsOfURL: iurl) {
-        //            imageURL.image = UIImage(data: data)
-        //        }
-        
-        
+        getJSON(url, completionHandler:handleResponse)
+    }
+    
+    func getJSON(url:String, completionHandler: (JSON -> Void)) -> Void {
+        Alamofire.request(.GET, url, parameters: ["foo": "bar"])
+            .responseJSON { response in
+                if (response.data != nil) {
+                    completionHandler(JSON.init(data: response.data!))
+                }
+        }
     }
     
     func handleResponse(response: JSON) {
         self.pJSON = response
-        print(pJSON)
+        if let a = self.pJSON {
+            name = a["product_composite_response"]["items"][0]["general_description"].stringValue
+            img_url = a["product_composite_response"]["items"][0]["image"]["internal_primary_image_url"][0].stringValue
+            currentPrice = Double(a["product_composite_response"]["items"][0]["online_price"]["current_price"].stringValue)!
+            originalPrice = Double(a["product_composite_response"]["items"][0]["online_price"]["original_price"].stringValue)!
+            listPrice = Double(a["product_composite_response"]["items"][0]["online_price"]["list_price"].stringValue)!
+        }
+
     }
     
 }
