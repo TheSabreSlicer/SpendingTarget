@@ -14,6 +14,8 @@
 		776F91DC1BDB7AF500CD1B22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776F91DB1BDB7AF500CD1B22 /* Images.xcassets */; };
 		776F91DF1BDB7AF500CD1B22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776F91DD1BDB7AF500CD1B22 /* LaunchScreen.xib */; };
 		776F91EB1BDB7AF600CD1B22 /* SpendingTargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F91EA1BDB7AF600CD1B22 /* SpendingTargetTests.swift */; };
+		77E22D0D1BDBA4BC00E65D8D /* JSONfuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E22D0C1BDBA4BC00E65D8D /* JSONfuncs.swift */; };
+		77E22D0F1BDBA56900E65D8D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E22D0E1BDBA56900E65D8D /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		776F91E41BDB7AF500CD1B22 /* SpendingTargetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpendingTargetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		776F91E91BDB7AF600CD1B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		776F91EA1BDB7AF600CD1B22 /* SpendingTargetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingTargetTests.swift; sourceTree = "<group>"; };
+		77E22D0C1BDBA4BC00E65D8D /* JSONfuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONfuncs.swift; sourceTree = "<group>"; };
+		77E22D0E1BDBA56900E65D8D /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		776F91D11BDB7AF500CD1B22 /* SpendingTarget */ = {
 			isa = PBXGroup;
 			children = (
+				77E22D0E1BDBA56900E65D8D /* SwiftyJSON.swift */,
 				776F91D41BDB7AF500CD1B22 /* AppDelegate.swift */,
 				776F91D61BDB7AF500CD1B22 /* ViewController.swift */,
 				02AF341A1BDB8F7500892694 /* Product.swift */,
@@ -86,6 +91,7 @@
 				776F91DB1BDB7AF500CD1B22 /* Images.xcassets */,
 				776F91DD1BDB7AF500CD1B22 /* LaunchScreen.xib */,
 				776F91D21BDB7AF500CD1B22 /* Supporting Files */,
+				77E22D0C1BDBA4BC00E65D8D /* JSONfuncs.swift */,
 			);
 			path = SpendingTarget;
 			sourceTree = "<group>";
@@ -159,6 +165,7 @@
 		776F91C71BDB7AF500CD1B22 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = CLM;
 				TargetAttributes = {
@@ -218,6 +225,8 @@
 				776F91D71BDB7AF500CD1B22 /* ViewController.swift in Sources */,
 				776F91D51BDB7AF500CD1B22 /* AppDelegate.swift in Sources */,
 				02AF341B1BDB8F7500892694 /* Product.swift in Sources */,
+				77E22D0F1BDBA56900E65D8D /* SwiftyJSON.swift in Sources */,
+				77E22D0D1BDBA4BC00E65D8D /* JSONfuncs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +354,7 @@
 				INFOPLIST_FILE = SpendingTarget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -355,6 +365,7 @@
 				INFOPLIST_FILE = SpendingTarget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
