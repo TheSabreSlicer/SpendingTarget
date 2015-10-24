@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>38F2CE0A-2BF1-4E32-A62E-94D7163F8259</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SpendingTarget</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F45DE4E9B21627F19FC6544F7B87FCF9A3F38F01</key>
+		<string>https://github.com/TheSabreSlicer/SpendingTarget.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SpendingTarget.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F45DE4E9B21627F19FC6544F7B87FCF9A3F38F01</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TheSabreSlicer/SpendingTarget.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F45DE4E9B21627F19FC6544F7B87FCF9A3F38F01</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F45DE4E9B21627F19FC6544F7B87FCF9A3F38F01</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SpendingTarget</string>
+		</dict>
+	</array>
+</dict>
+</plist>
