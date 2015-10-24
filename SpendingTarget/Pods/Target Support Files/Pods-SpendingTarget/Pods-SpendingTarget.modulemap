@@ -1,0 +1,6 @@
+framework module Pods_SpendingTarget {
+  umbrella header "Pods-SpendingTarget-umbrella.h"
+
+  export *
+  module * { export * }
+}
