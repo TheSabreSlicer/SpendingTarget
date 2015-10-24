@@ -15,15 +15,8 @@ class jsonFuncs {
     func getJSON(url:String, completionHandler: (JSON -> Void)) -> Void {
         Alamofire.request(.GET, url, parameters: ["foo": "bar"])
             .responseJSON { response in
-                debugPrint(response)     // prints detailed description of all response properties
-                
-                print(response.request)  // original URL request
-                print(response.response) // URL response
-                print(response.data)     // server data
-                print(response.result)   // result of response serialization
-                
-                if let json = response.result.value {
-                    completionHandler(json as! JSON)
+                if (response.data != nil) {
+                    completionHandler(JSON.init(data: response.data!))
                 }
         }
     }

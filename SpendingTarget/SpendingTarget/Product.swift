@@ -10,7 +10,7 @@ import SwiftyJSON
 
 class Product {
     
-    var name : String
+    var name : String?
     
     //    image stuff should be done later - when the interface has been built
     
@@ -40,8 +40,7 @@ class Product {
     
     // You will likely need  some sort of initializer for the image as well
     
-    init(name : String, tcn : Int) {
-        self.name = name
+    init(tcn : Int) {
         self.tcin = tcn
         self.url = "https://api.target.com/items/v3/"+String(self.tcin)+"?id_type=tcin&fields=pricing,images&key=1Kfdqvy6wHmvJ4LDyAVOl7saCBoKHcSb"
         jsonFuncs().getJSON(url, completionHandler:handleResponse)
@@ -55,6 +54,7 @@ class Product {
     
     func handleResponse(response: JSON) {
         self.pJSON = response
+        print(pJSON)
     }
     
 }
