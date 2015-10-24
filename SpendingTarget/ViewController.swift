@@ -10,7 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var isFirstRun = true
+    let notFirstLaunch = NSUserDefaults.standardUserDefaults().boolForKey("NotFirstLaunch")
+    
+    override func viewWillAppear(animated: Bool) {
+        if notFirstLaunch {
+            presentViewController(nextViewController, animated: true, completion: nil)
+        }
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
