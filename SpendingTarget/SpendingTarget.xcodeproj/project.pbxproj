@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77097B0A1BDC80810090EFF9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77097B091BDC80810090EFF9 /* SearchViewController.swift */; };
+		77097B0C1BDC8A820090EFF9 /* searchItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77097B0B1BDC8A820090EFF9 /* searchItems.swift */; };
 		770EDD2B1BDBD56700584BF0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770EDD291BDBD56700584BF0 /* Alamofire.framework */; };
 		770EDD2C1BDBD56700584BF0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770EDD2A1BDBD56700584BF0 /* SwiftyJSON.framework */; };
 		770EDD301BDBDFF700584BF0 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770EDD2F1BDBDFF700584BF0 /* Product.swift */; };
 		776199321BDC12C80031F279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776199311BDC12C80031F279 /* Main.storyboard */; };
+		7788F8091BDC5DBB006C4837 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788F8081BDC5DBB006C4837 /* BudgetViewController.swift */; };
+		7788F80F1BDC7B38006C4837 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788F80E1BDC7B38006C4837 /* TrackViewController.swift */; };
+		7788F8111BDC7C35006C4837 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788F8101BDC7C35006C4837 /* LearnViewController.swift */; };
 		77C779201BDBD00400C290E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C7791F1BDBD00400C290E4 /* AppDelegate.swift */; };
 		77C779221BDBD00400C290E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C779211BDBD00400C290E4 /* ViewController.swift */; };
 		77C779271BDBD00400C290E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C779261BDBD00400C290E4 /* Assets.xcassets */; };
@@ -40,10 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77097B091BDC80810090EFF9 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		77097B0B1BDC8A820090EFF9 /* searchItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchItems.swift; sourceTree = "<group>"; };
 		770EDD291BDBD56700584BF0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		770EDD2A1BDBD56700584BF0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		770EDD2F1BDBDFF700584BF0 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		776199311BDC12C80031F279 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../../Downloads/Main.storyboard; sourceTree = "<group>"; };
+		7788F8081BDC5DBB006C4837 /* BudgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
+		7788F80E1BDC7B38006C4837 /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		7788F8101BDC7C35006C4837 /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		77C7791C1BDBD00400C290E4 /* SpendingTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendingTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C7791F1BDBD00400C290E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77C779211BDBD00400C290E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +136,7 @@
 		77C7791E1BDBD00400C290E4 /* SpendingTarget */ = {
 			isa = PBXGroup;
 			children = (
+				7788F8081BDC5DBB006C4837 /* BudgetViewController.swift */,
 				77C7791F1BDBD00400C290E4 /* AppDelegate.swift */,
 				77C779211BDBD00400C290E4 /* ViewController.swift */,
 				77C8F6381BDC017900F03E62 /* InitialTabController.swift */,
@@ -133,7 +144,11 @@
 				77C779281BDBD00400C290E4 /* LaunchScreen.storyboard */,
 				77C7792B1BDBD00400C290E4 /* Info.plist */,
 				776199311BDC12C80031F279 /* Main.storyboard */,
+				7788F8101BDC7C35006C4837 /* LearnViewController.swift */,
+				7788F80E1BDC7B38006C4837 /* TrackViewController.swift */,
 				770EDD2F1BDBDFF700584BF0 /* Product.swift */,
+				77097B091BDC80810090EFF9 /* SearchViewController.swift */,
+				77097B0B1BDC8A820090EFF9 /* searchItems.swift */,
 			);
 			path = SpendingTarget;
 			sourceTree = "<group>";
@@ -352,9 +367,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77097B0C1BDC8A820090EFF9 /* searchItems.swift in Sources */,
+				7788F8111BDC7C35006C4837 /* LearnViewController.swift in Sources */,
 				77C8F6391BDC017900F03E62 /* InitialTabController.swift in Sources */,
+				77097B0A1BDC80810090EFF9 /* SearchViewController.swift in Sources */,
 				770EDD301BDBDFF700584BF0 /* Product.swift in Sources */,
 				77C779221BDBD00400C290E4 /* ViewController.swift in Sources */,
+				7788F8091BDC5DBB006C4837 /* BudgetViewController.swift in Sources */,
+				7788F80F1BDC7B38006C4837 /* TrackViewController.swift in Sources */,
 				77C779201BDBD00400C290E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

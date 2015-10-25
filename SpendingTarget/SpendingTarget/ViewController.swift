@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         if notFirstLaunch {
+            print("Not first launch")
             self.performSegueWithIdentifier("introSeg", sender: self)
         } else {
             print("It was the first launch!")
@@ -24,10 +25,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        SearchViewController().initSearch()
         // Do any additional setup after loading the view, typically from a nib.
-        let test = Product(tcn:14886116)
-        //print(test.name)
-        //print(test.currentPrice)
+        
     }
 
     override func didReceiveMemoryWarning() {

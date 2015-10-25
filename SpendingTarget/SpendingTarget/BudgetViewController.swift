@@ -1,5 +1,5 @@
 //
-//  TableViewController.swift
+//  BudgetViewController.swift
 //  SpendingTarget
 //
 //  Created by Logan Graybill on 10/24/15.
@@ -8,11 +8,15 @@
 
 import UIKit
 
-class TableViewController : UIViewController, UITableViewDataSource {
+class BudgetViewController : UIViewController, UITableViewDataSource {
     
     // The contents of the following array will appear in the table.
     
-    var dataSourceArray = [String]()
+    //var dataSourceArray = [String]()
+    
+    var dataSourceArray = ["Zafar", "is", "a", "fuckboi"]
+    
+    
     
     
     
@@ -36,12 +40,9 @@ class TableViewController : UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("budgetVC loaded")
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 }
